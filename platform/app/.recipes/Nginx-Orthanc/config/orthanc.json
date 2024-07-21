@@ -32,7 +32,7 @@
   "SslCertificate": "certificate.pem",
   "AuthenticationEnabled": false,
   "RegisteredUsers": {
-    "test": "test"
+    "ark": "ark"
   },
   "DicomModalities": {},
   "DicomModalitiesInDatabase": false,
