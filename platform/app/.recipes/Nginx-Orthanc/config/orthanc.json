@@ -13,7 +13,7 @@
   "HttpDescribeErrors": true,
   "HttpCompressionEnabled": true,
   "DicomServerEnabled": true,
-  "DicomAet": "ORTHANC",
+  "DicomAet": "ARKPACS-DC",
   "DicomCheckCalledAet": false,
   "DicomPort": 4242,
   "DefaultEncoding": "Latin1",
@@ -40,7 +40,11 @@
   "DicomAlwaysAllowStore": true,
   "DicomCheckModalityHost": false,
   "DicomScuTimeout": 10,
-  "OrthancPeers": {},
+  "OrthancPeers": {
+  "ARKPACS-MAIN" : [ "http://192.168.4.99:8042/" ],
+  "ARKPACS-BACKUP" : [ "http://192.168.4.101:8042/" ],
+  "ARKPACS-STORAGE" : [ "http://192.168.4.102:8042/" ]
+  },
   "OrthancPeersInDatabase": false,
   "HttpProxy": "",
 
@@ -70,7 +74,7 @@
   "SynchronousCMove": true,
   "JobsHistorySize": 10,
   "SaveJobs": true,
-  "OverwriteInstances": false,
+  "OverwriteInstances": true,
   "MediaArchiveSize": 1,
   "StorageAccessOnFind": "Always",
   "MetricsEnabled": true,
