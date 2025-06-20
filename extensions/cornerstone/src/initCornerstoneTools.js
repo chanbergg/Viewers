@@ -118,8 +118,16 @@ export default function initCornerstoneTools(configuration = {}) {
       ...annotationStyle,
     },
   });
+  // ... after all addTool calls and default style setup ...
+  const brightPurple = 'rgb(191, 64, 255)';
+  const newStyles = {
+    Angle: {
+      color: brightPurple,
+      lineDash: '', // solid line
+    },
+  };
+  annotation.config.style.setToolGroupToolStyles('default', newStyles);
 }
-
 const toolNames = {
   Pan: PanTool.toolName,
   ArrowAnnotate: ArrowAnnotateTool.toolName,
